@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000">
+ <androidx.camera.view.PreviewView android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:gravity="center" android:orientation="vertical" android:padding="18dp">
+  <TextView android:id="@+id/modeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OVAN SMART HDR" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold"/>
+  <TextView android:id="@+id/statusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Natural • HDR • AI Detail" android:textColor="#DDFFFFFF" android:textSize="12sp" android:paddingTop="4dp"/>
+ </LinearLayout>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:gravity="center" android:orientation="vertical" android:paddingBottom="26dp">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal" android:paddingBottom="12dp">
+   <Button android:id="@+id/flashButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚡ A" android:textColor="#FFFFFF" android:backgroundTint="#55000000"/>
+   <Button android:id="@+id/modeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SMART HDR" android:textColor="#FFFFFF" android:backgroundTint="#55000000"/>
+   <Button android:id="@+id/switchButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="↻" android:textColor="#FFFFFF" android:backgroundTint="#55000000"/>
+  </LinearLayout>
+  <SeekBar android:id="@+id/exposureSeek" android:layout_width="230dp" android:layout_height="wrap_content" android:max="200" android:progress="100" android:visibility="gone"/>
+  <Button android:id="@+id/shutterButton" android:layout_width="88dp" android:layout_height="88dp" android:text="●" android:textSize="36sp" android:textColor="#000000" android:backgroundTint="#FFFFFF"/>
+ </LinearLayout>
+</FrameLayout>
