@@ -1,7 +1,23 @@
-# OVAN Camera V3
+# OVAN Camera V4
 
-V3 menambahkan fondasi image-quality workflow: MAXIMIZE_QUALITY capture, Smart HDR/Natural/iPhone Style/Night/Portrait modes, exposure control, tap-to-focus, flash control, dan front/back camera.
+OVAN Camera V4 adalah aplikasi kamera Android native berbasis Kotlin + CameraX.
 
-Catatan: label mode adalah pipeline/UX foundation. True multi-frame HDR, computational RAW fusion, GPU tone mapping, semantic segmentation, dan device-specific tuning memerlukan implementasi lanjutan dan dukungan hardware kamera.
+## Fitur V4
+- CameraX photo capture
+- Kamera belakang/depan
+- Tap-to-focus dengan focus marker
+- Zoom 1×–8×
+- Flash Auto / On / Off
+- Timer 3 detik / 10 detik
+- Grid rule-of-thirds
+- Preset Smart HDR, Natural, iPhone Style, Night, Portrait
+- Kontrol exposure pada preset Night
+- Tombol galeri
+- APK debug otomatis dibangun oleh Railway
 
-Buka folder dengan Android Studio, lakukan Gradle Sync, lalu Run pada HP Android.
+> Catatan: nama preset seperti Smart HDR adalah preset UI/kontrol. V4 belum mengklaim melakukan computational HDR multi-frame.
+
+## Railway
+Repository harus memiliki `Dockerfile` di root. Railway akan membangun Docker image lalu menjalankan server Python untuk menyediakan APK.
+
+File hasil build: `OVAN-Camera-V4-debug.apk`.

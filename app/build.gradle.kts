@@ -1,9 +1,23 @@
-plugins { id("com.android.application"); id("org.jetbrains.kotlin.android") }
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
 
-android { namespace = "com.ovan.camera"; compileSdk = 35
-    defaultConfig { applicationId = "com.ovan.camera"; minSdk = 24; targetSdk = 35; versionCode = 3; versionName = "3.0" }
+android {
+    namespace = "com.ovan.camera"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.ovan.camera"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 4
+        versionName = "4.0"
+    }
+
     buildFeatures { viewBinding = true }
 }
+
 dependencies {
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
